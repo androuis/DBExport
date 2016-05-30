@@ -1,8 +1,9 @@
 # DBExport
 A library that exports a db from the app to the external storage.
 
-##### USAGE: <br/>
-###### Add dependency <br/>
+###### Usege:
+<pre><code>DBExport.exportDatabse("yourDatabaseName", "exportedDatabaseGivenName", context);</code></pre>
+###### Add dependency:
 <pre><code>
 compile 'com.andreibacalu.android:dbExport:1.0.0'
 </code></pre>
@@ -21,5 +22,3 @@ OR <br/>
   &lt;artifact name='$AID' ext='pom'&gt;&lt;/artifact&gt;
 &lt;/dependency&gt;
 </code></pre>
-###### Use utility <br/>
-<pre><code>DBExport.exportDatabse("yourDatabaseName", "exportedDatabaseGivenName", context);</code></pre>
