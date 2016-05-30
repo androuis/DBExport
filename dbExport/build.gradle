@@ -12,7 +12,7 @@ ext {
     libraryName = 'DBExport'
     artifact = 'dbexport'
 
-    libraryDescription = 'A library for android that allows to export a db from the app.'
+    libraryDescription = 'A library for android that allows to export a db from the app to the storage.'
 
     siteUrl = 'https://github.com/androuis/DBExport'
     gitUrl = 'https://github.com/androuis/DBExport.git'
