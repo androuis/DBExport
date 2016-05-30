@@ -1,5 +1,5 @@
 # DBExport
-A library that exports a db from the app to the external storage.
+A library that exports a database from the application to the external storage
 
 ###### Usege:
 <pre><code>DBExport.exportDatabse("yourDatabaseName", "exportedDatabaseGivenName", context);</code></pre>
