@@ -1,18 +1,25 @@
 # DBExport
 A library that exports a db from the app to the external storage.
 
-USAGE: <br/>
-1. add dependency <br/>
-compile 'com.andreibacalu.android:dbExport:1.0.0' <br/>
+##### USAGE: <br/>
+###### Add dependency <br/>
+<pre><code>
+compile 'com.andreibacalu.android:dbExport:1.0.0'
+</code></pre>
 OR <br/>
-\<dependency> <br/>
-  \<groupId>com.andreibacalu.android\</groupId> <br/>
-  \<artifactId>dbExport\</artifactId> <br/>
-  \<version>1.0.0\</version> <br/>
-  \<type>pom\</type> <br/>
-\</dependency> <br/>
+<pre><code>
+&lt;dependency&gt;
+  &lt;groupId&gt;com.andreibacalu.android&lt;/groupId&gt;
+  &lt;artifactId&gt;dbExport&lt;/artifactId&gt;
+  &lt;version&gt;1.0.0&lt;/version&gt;
+  &lt;type&gt;pom&lt;/type&gt;
+&lt;/dependency&gt;
+</code></pre>
 OR <br/>
-\<dependency org='com.andreibacalu.android' name='dbExport' rev='1.0.0'> <br/>
-  \<artifact name='$AID' ext='pom'>\</artifact> <br/>
-\</dependency> <br/>
-2. 
+<pre><code>
+&lt;dependency org='com.andreibacalu.android' name='dbExport' rev='1.0.0'&gt;
+  &lt;artifact name='$AID' ext='pom'&gt;&lt;/artifact&gt;
+&lt;/dependency&gt;
+</code></pre>
+###### Use utility <br/>
+<pre><code>DBExport.exportDatabse("yourDatabaseName", "exportedDatabaseGivenName", context);</code></pre>
