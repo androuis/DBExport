@@ -1,9 +1,10 @@
+//Details: https://medium.com/@tigr/how-to-publish-your-android-studio-library-to-jcenter-5384172c4739#.7q1uspwxe
 apply plugin: 'com.android.library'
 
 ext {
     PUBLISH_GROUP_ID = 'com.andreibacalu.android'
     PUBLISH_ARTIFACT_ID = 'dbExport'
-    PUBLISH_VERSION = '1.0.0'
+    PUBLISH_VERSION = '1.1.0'
 
     bintrayRepo = 'maven'
     bintrayName = 'dbexport'
@@ -17,7 +18,7 @@ ext {
     siteUrl = 'https://github.com/androuis/DBExport'
     gitUrl = 'https://github.com/androuis/DBExport.git'
 
-    libraryVersion = '1.0.0'
+    libraryVersion = '1.1.0'
 
     developerId = 'androuis'
     developerName = 'Andrei Bacalu'
@@ -34,14 +35,17 @@ android {
     defaultConfig {
         minSdkVersion 5
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.1.0"
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    testOptions {
+        unitTests.returnDefaultValues = true
     }
 }
 

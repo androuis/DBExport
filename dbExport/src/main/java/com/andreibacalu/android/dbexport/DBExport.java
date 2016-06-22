@@ -7,6 +7,7 @@ import android.text.TextUtils;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.nio.channels.FileChannel;
 
 /**
@@ -16,7 +17,7 @@ import java.nio.channels.FileChannel;
 public class DBExport {
 
     /**
-     * Exports a database from the application to the external storage.
+     * Exports a database from the application to the external storage &amp; local project directory.
      *
      * @param dbName the database to be exported
      * @param exportedDbName the name of the file where the database is exported (can be null)
@@ -36,10 +37,13 @@ public class DBExport {
                     dst.transferFrom(src, 0, src.size());
                     src.close();
                     dst.close();
+
+                    Runtime.getRuntime().exec("adb pull " + backupDB.getAbsolutePath());
                 }
             }
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
 }
