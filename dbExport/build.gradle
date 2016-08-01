@@ -4,7 +4,7 @@ apply plugin: 'com.android.library'
 ext {
     PUBLISH_GROUP_ID = 'com.andreibacalu.android'
     PUBLISH_ARTIFACT_ID = 'dbExport'
-    PUBLISH_VERSION = '1.1.0'
+    PUBLISH_VERSION = '1.1.1'
 
     bintrayRepo = 'maven'
     bintrayName = 'dbexport'
@@ -18,7 +18,7 @@ ext {
     siteUrl = 'https://github.com/androuis/DBExport'
     gitUrl = 'https://github.com/androuis/DBExport.git'
 
-    libraryVersion = '1.1.0'
+    libraryVersion = '1.1.1'
 
     developerId = 'androuis'
     developerName = 'Andrei Bacalu'
@@ -36,7 +36,7 @@ android {
         minSdkVersion 5
         targetSdkVersion 23
         versionCode 2
-        versionName "1.1.0"
+        versionName "1.1.1"
     }
     buildTypes {
         release {

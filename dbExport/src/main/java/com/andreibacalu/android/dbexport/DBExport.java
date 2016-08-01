@@ -17,7 +17,7 @@ import java.nio.channels.FileChannel;
 public class DBExport {
 
     /**
-     * Exports a database from the application to the external storage &amp; local project directory.
+     * Exports a database from the application to the external storage
      *
      * @param dbName the database to be exported
      * @param exportedDbName the name of the file where the database is exported (can be null)
@@ -37,8 +37,6 @@ public class DBExport {
                     dst.transferFrom(src, 0, src.size());
                     src.close();
                     dst.close();
-
-                    Runtime.getRuntime().exec("adb pull " + backupDB.getAbsolutePath());
                 }
             }
         } catch (IOException e) {
