@@ -25,7 +25,6 @@ public class ExportUnitTest extends InstrumentationTestCase {
         super.setUp();
     }
 
-    @Test
     public void testExportDB() {
         String dbName = "db1";
         createDBs(dbName);
