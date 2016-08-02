@@ -49,6 +49,9 @@ android {
     }
 }
 
+def adb = "$System.env.ANDROID_HOME/platform-tools/adb"
+//TODO: create task to export db
+
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
 apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
